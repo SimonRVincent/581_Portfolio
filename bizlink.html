@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html>
+<title>BizLink</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./pictures/BizlinkWide.jpg')
+
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+    
+</div>
+
+ 
+<!-- Container (About Section) -->
+<div class="w3-content w3-container " id="about">
+  <h3 class="w3-center w3-xxlarge w3-wide">BizLink</h3>
+  <h4 class="w3-center"><em>Write Ups</em></h4>
+  <h5>BIZLINK GITHUB LINK</h5>
+  <a href="https://simonrvincent.github.io/dbc-card-app/">Try Now!</a> </br>
+  <a href="https://github.com/SimonRVincent/dbc-card-app">View Source Code For DBC Card App!</a> </br>
+  <a href="https://github.com/SimonRVincent/dbc-app">View Source Code For DBC App!</a>
+
+
+  <h5>Overview</h5>
+  <h6>Introducing BizLink Card – Your Virtual Business Connection!</h6>
+  <p> Welcome to the future of professional networking! BizLink Card is not just a business card; it's your digital gateway to seamless and dynamic connections in the professional realm.</p>
+  <p> Elevate your networking experience with a revolutionary virtual business card that puts YOU at the forefront of innovation. Unleash the power of connection with a sleek and modern design that combines style with functionality.</p>
+  <h6>What sets BizLink Card apart?</h6>
+  <ul>
+    <li><b>Social Links: </b>Effortlessly integrate your LinkedIn, GitHub, Twitter, and other social profiles into one centralized hub. Showcase your professional presence with just a tap!</li>
+    <li><b>Personalized Profile: </b>Make a lasting impression with a stunning profile picture, your name, and a concise 'About Me' section. Tell your professional story and let your personality shine through.</li>
+    <li><b>Contact Info: </b> Ensure that your contacts can reach you instantly. With BizLink Card, your email, phone number, and other essential contact details are just a tap away.</li>
+    <li><b>Current Company: </b>Keep your network in the loop. Display your current company information, allowing others to stay updated on your professional journey.</li>
+    <li><b>Dynamic and Interactive: </b>Forget static business cards; BizLink Card brings your information to life. Impress potential collaborators, clients, or employers with an interactive and engaging digital experience.</li>
+  </ul>
+  <p>Join the future of professional networking – where innovation meets connection. Download BizLink Card today and redefine the way you network! Your business connections have never been more accessible, dynamic, or impactful. BizLink Card: Connect with Confidence. Connect with Class.</p>
+
+  <h5>App Walkthough and Technical Overview</h5>
+  <h6>Part 1: QR Code Generator, the Digital Business Card</h6>
+  <p>The QR Code Generator is a web-based application that allows users to create a unique QR code containing their business card details. It employs a simple interface where users can input their professional information, including name, position, email, phone number, LinkedIn, GitHub, and a brief bio. This information is then encoded into a QR code, which can be shared or printed for distribution. Professionals need to only to allow others to scan their QR code with a smartphone, and their business card is distributed, with working links and email included. </p>
+  <h6>Part 2: Business Card Display </h6>
+  <p>When the QR code is scanned, it directs the scanner to a web-based Digital Business Card Display. This part of the application parses the information encoded in the QR code and presents it in an aesthetically pleasing and easy-to-read format. The display includes the individual's name, position, contact information, social links, and a brief bio in the format of a digital business card. </p>
+  <h6>Technical Implementation</h6>
+  <h6>No Database Requirement</h6>
+  <p>A significant feature of this application is its independence from a database. All the necessary information is embedded directly within the QR code. When the QR code is scanned, the application parses the URL parameters encoded in the QR code to dynamically generate the business card on the fly. This approach offers several advantages: </p>
+  <ol>
+    <li><b>Privacy and Security: </b>No personal data is stored on a server, reducing privacy concerns and security risks. </li>
+    <li><b>Ease of Use: </b>Users don't need to create accounts or log in, simplifying the process. </li>
+    <li><b>Cost-Effectiveness: </b>Eliminating the need for a database reduces development and maintenance costs. Business cards also do not need to be printed and carried. </li>
+  </ol>
+  <h6>Technologies Used</h6>
+  <p>The application is developed using modern web technologies. The QR Code Generator is built with HTML, CSS, and JavaScript, ensuring compatibility across various devices and platforms. The Business Card Display uses React, a popular JavaScript library for building user interfaces, along with React Bootstrap for styling. This combination allows for a responsive design that adapts to different screen sizes, be it mobile phones, tablets, or desktop screens, though the application is built with smartphones in mind. </p>
+  <h6>Integration with Communication Platforms </h6>
+  <p>The app's design makes it an excellent tool for both in-person and remote interactions. In face-to-face settings, the QR code acts as a more-detailed business card that does not require multiple copies. The QR code can be printed on business cards, badges, or promotional materials as well to easily distribute information. For remote communication, the QR code can be shared digitally through email signatures, virtual business cards, or social media platforms. </p>
+  <h6>Conclusion </h6>
+  <p>The Digital Business Card application presents a unique and innovative solution for sharing professional contact information in a modern, digital format. By leveraging QR codes and web technologies, it addresses the needs of contemporary professional networking, eliminating the need for physical business cards and reducing reliance on traditional database-driven systems. This approach aligns well with the growing trend of digital transformation in personal and professional communication and collaboration. </p>
+
+
+
+  <h5>Initial 10 Sketches</h5>
+  <p>Our initial ten sketeches attempted to create ideas for making virtual collaboration easier and more fun! We had many ideas including virtual hats, art galleries, pet cameras, and more. But we eventually settled on our virtual business card idea.</p>
+  <h5>Refined 10 Sketches</h5>
+  <p>For our refined sketches, we went deeper into our business card idea to find integrations and variations to make our idea even better. </p>
+
+
+</div>
+   
+
+<h3 class="w3-center w3-xxlarge w3-wide">PROBLEM CONCEPT</h3>
+<div style="text-align:center;">
+  <video width="320" height="240" controls="controls" name="BizLink Concept Video">
+    <source src="./bizpictures/BizLinkConcept.mov" >
+  Your browser does not support the video tag.
+  </video>
+
+</div>
+
+
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center w3-xxlarge w3-wide">ROTOSCOPE SKETCHES</h3>
+    <h4 class="w3-center"><em>Click on each image to make larger!</em></h4><br>
+  
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Two business men meet">
+      </div>
+  
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="One of the men asks the other for a business card">
+      </div>
+  
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The man looks but cannot find a business card">
+      </div>
+  
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The other man has an idea">
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The other man shows the first his phone with a qr app to scan his business card">
+      </div>
+  
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The man is amazed at such an invention">
+      </div>
+  
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="He looks at the other man's virtual business card">
+      </div>
+  
+      <div class="w3-col m3">
+          <img src="./bizpictures/sketches/rotoscopeSketch8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Virtual business card">
+      </div>
+    </div>
+  </div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+    <div class="w3-display-middle">
+      <h3 class="w3-center w3-xxlarge w3-wide">DEMO</h3>
+    </div>
+  </div>
+  
+  <div style="text-align:center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jGyWGj2zegs?si=E1CrdtNQNLIeEPm2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+<!-- Container (Sketch Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center w3-xxlarge w3-wide">INITIAL SKETCHES</h3>
+  <h4 class="w3-center"><em>Click on each image to read the description!</em></h4><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="./bizpictures/sketches/A4Sketch1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can assign virtual hats to certain buzzwords so that when a user says a word, a hat filter is applied to that user. ">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="This is a storyboard app that allows users to create a story one sentence at a time. This can make written collaboration more interesting.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="This virtual award wall allows friends and collegues to assign awards to different users that can be see by everyone. Great way to team build and encourage.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="This playlist battle is a fun way to listen to music and compete for the best work playlist.">
+    </div>
+    
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="This fascinating virtual art gallery allows users to post virtual art and virtually walk around to enjoy the art.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="This virtual team pet idea is a fantastic way to team build and be motivated. Users can take turns feeding the virtual pet as well as playing and bathing the pet.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="These translation earbuds could be incredibly helpful for visiting non-english countries. The user just needs to listen for the automatic translation.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="These fantastic virtual business cards save time and money by providing a virtual approach with all the user's information at your fingertips. ">
+    </div>
+
+    
+
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="This collaborative pet cam idea allows users working in the same place to collectivly view all their pets. All users can take turns keeping an eye on their favorite animals.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/A4Sketch10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="This virtual slap table helps communicate frustration between coworkers by shaking the table as if someone hit it angrily.">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Refined Sketch Section) -->
+<div class="w3-content w3-container w3-padding-64" >
+  <h3 class="w3-center w3-xxlarge w3-wide">REFINED SKETCHES</h3>
+  <h4 class="w3-center"><em>Click on each image to read the description!</em></h4><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can use a QR code to obtain the virtual business card">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Business card displays users choses social links">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can personalize the colours of their business cards">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can add profile pictures to their business cards">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can link their resumes to their business cards">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can tap their phones together to obtain the virtual business card">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can tap an NFC chip to obtain the virtual business card">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="User's contact info is displayed in the business card">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can track stats on their cards such as how many times it's been shared and how many people have revisited it.">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/sketches/bizSketch10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Users can add all their received business cards to a virtual business card wallet">
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center w3-xxlarge w3-wide">APP SCREENSHOTS</h3>
+  <h4 class="w3-center"><em>Click on each image to read the description!</em></h4><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="./bizpictures/screenshots/BCard1.png" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity"> 
+      
+    </div>
+
+    <div class="w3-col m3">
+        <img src="./bizpictures/screenshots/BCard2.png" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity"> 
+        
+      </div>
+
+    <div class="w3-col m3">
+      <img src="./bizpictures/screenshots/defaultCard.png" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity"> 
+      
+    </div>
+
+    <div class="w3-col m3">
+    <img src="./bizpictures/screenshots/QRCode.png" style="width: 100%; height: 24.99999%;" onclick="onClick(this)" class="w3-hover-opacity"> 
+    
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" style="text-align:left" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+ 
+<script>
+  
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+
+</script>
+
+</body>
+</html>
+
